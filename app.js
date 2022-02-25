@@ -8,7 +8,7 @@ let notesObj= prevnote || [];
 let toDoAdd=document.querySelector('.todo-add-container');
 toDoAdd.innerHTML=html;
 let noNotes=document.querySelector('.nonotes-txt');
-if (prevnote.length==0) {
+if (prevnote.length==0 || prevnote==null) {
   noNotes.innerHTML=`<h3><em>NO ToDo's, Add One</em></h3>`;
 }
 addBtn.addEventListener('click',function(element) {
